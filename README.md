@@ -1,10 +1,8 @@
-# wasm 3D
+# wasm 2D
 
-Following [Rust 3D Graphics in the Browser](https://www.youtube.com/watch?v=p7DtoeuDT5Y&list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5&index=21&t=966s) tutorials.  
+This is a completed version of [2D Graphics](https://www.youtube.com/watch?v=kjYCSySObDo&list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5&index=21) tutorial.  
 
-## useful related resources
-* https://webglfundamentals.org/  
-* https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API  
+It makes a nice template for experimentaion with WebGL + wasm (compiled from Rust), especially for 2D applications.
 
 ## setup
 
@@ -269,17 +267,10 @@ Should now deploy a build via Travis CI
 
   ------------------------------------------------------  
 
-I have omitted lots of stuff from the tutorial config files, especially from `webpack.config.js`, `cargo.toml`, and `package.json`, and have not included `web.config` at all, since the omissions seem to be irrelevant (unused) at this point. As the tutorial progresses, I may discover various omitted components are, in fact, necessary.  
+I have omitted lots of stuff from the tutorial config files, especially from `webpack.config.js`, `cargo.toml`, and `package.json`, and have not included `web.config` at all, since the omissions seem to be irrelevant (unused).
   
-I have also omitted some parts of various files from the wasm-test repo. used as a template (which is itself a cut-down version of Siddharth Naithani's wasm-template-rust repo.) Again, I may need to reinstate some of the removed parts.  
-
-It might also be worthwhile changing `mode: "development"` to `mode: "production"` in `webpack.config.sys` at some point.  
-  
-For now, however, things are working, both locally and when deployed.    
+I have also omitted some parts of various files from the wasm-test repo. used as a template (which is itself a cut-down version of Siddharth Naithani's wasm-template-rust repo.), again since the ommisions did not seem necessary.        
 
   ------------------------------------------------------
-## Part 2: [2D Graphics](https://www.youtube.com/watch?v=kjYCSySObDo&list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5&index=21)  
 
-This section is completed. 
 
-edit to push to trigger build.
