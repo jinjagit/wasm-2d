@@ -1,0 +1,43 @@
+[package]
+name = "wasm-3d"
+version = "0.1.0"
+authors = ["Simon Tharby, following tutorial by Doug Milford"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies]
+wasm-bindgen = { version = "0.2.58", features = ["serde-serialize"] }
+console_error_panic_hook = { version = "0.1.6", optional = true }
+js-sys = "0.3.35"
+lazy_static = "1.3.0" # allows us to easily set up some application states
+nalgebra = "0.18.0" # algebra library (including matrices)
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.8"
+
+[dependencies.web-sys]
+version = "0.3.35"
+features = [
+  "console",
+  'Document',
+  'Element',
+  'EventTarget',
+  'HtmlCanvasElement',
+  'MouseEvent',
+  'WebGlBuffer',
+  'WebGlProgram',
+  'WebGlRenderingContext',
+  'WebGlShader',
+  'WebGlUniformLocation',
+  'Window',
+]
+
+# resolves `Fatal: error in validating input` error on was-pack build, from:
+# https://github.com/cloudflare/wrangler/issues/1474
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
