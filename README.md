@@ -1,6 +1,6 @@
 # wasm 2D
 
-This is a completed version of [2D Graphics](https://www.youtube.com/watch?v=kjYCSySObDo&list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5&index=21) tutorial.  
+This is a completed version of [2D Graphics](https://www.youtube.com/watch?v=kjYCSySObDo&list=PLLqEtX6ql2EyPAZ1M2_C0GgVd4A-_L4_5&index=21) tutorial, which also deployed to GitHub pages using Travis CI.  
 
 It makes a nice template for experimentaion with WebGL + wasm (compiled from Rust), especially for 2D applications.
 
