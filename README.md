@@ -16,7 +16,7 @@ create `.gitignore` in project root and add:
 **/*.rs.bk
 Cargo.lock
 ```
-add `travis.yml` with contents as in wasm-test template    
+add `.travis.yml` with contents as in wasm-test template    
 set `"name": "wasm-3d"` in `package.json`, and also change to:  
 ```
 "dependencies": {
